@@ -13,7 +13,7 @@ public class Calculator {
         System.out.print("Введите два числа: ");
         int first = reader.readFirstArg();
         int second = reader.readSecondArg();
-        System.out.print("Введите оператор (+, *): ");
+        System.out.print("Введите оператор (+, *, -, /): ");
         Operation po = reader.readMathOperation();
         int sum = po.getOperation().invoke(first, second);
         System.out.print("\nРезультат:\n");

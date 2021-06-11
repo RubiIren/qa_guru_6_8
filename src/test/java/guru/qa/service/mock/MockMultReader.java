@@ -6,16 +6,16 @@ import guru.qa.service.Reader;
 public class MockMultReader implements Reader {
     @Override
     public int readFirstArg() {
-        return 3;
+        return 8;
     }
 
     @Override
     public int readSecondArg() {
-        return 5;
+        return 4;
     }
 
     @Override
     public Operation readMathOperation() {
-        return Operation.MULT;
+        return Operation.DEL;
     }
 }
