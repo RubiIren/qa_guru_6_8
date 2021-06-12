@@ -11,7 +11,7 @@ class CalculatorTest {
 
     @Test
     void calculatorTest() {
-        calculator = new Calculator(new MockMultReader()); // 3, 5, *
+        calculator = new Calculator(new MockMultReader()); // 8, 4, /
         String result = calculator.start();
         Assertions.assertEquals("8 / 4 = 2", result);
     }

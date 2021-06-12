@@ -1,9 +1,6 @@
 package guru.qa.service;
 
-import guru.qa.service.impl.DelOperationHandler;
-import guru.qa.service.impl.MinusOperationHandler;
-import guru.qa.service.impl.MultOperationHandler;
-import guru.qa.service.impl.SumOperationHandler;
+import guru.qa.service.impl.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -34,5 +31,11 @@ class OperationHandlerTest {
     void delTest() {
         handler = new DelOperationHandler();
         Assertions.assertEquals(2, handler.invoke(8, 4));
+    }
+
+    @Test
+    void expTest() {
+        handler = new ExpOperationHandler();
+        Assertions.assertEquals(4096, handler.invoke(8, 4));
     }
 }
